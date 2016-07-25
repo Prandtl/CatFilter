@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Mvx.MvxImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        local:MvxBind="ImageUrl ImgUrl" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            local:MvxBind="Text Name"
+            android:textSize="36dp"
+            android:layout_margin="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Price"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            local:MvxBind="Text Price"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+</LinearLayout>
