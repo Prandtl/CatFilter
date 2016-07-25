@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using CatFilter.Core.Services;
 using MvvmCross.Core.ViewModels;
 
-namespace CatFilter.ViewModels
+namespace CatFilter.Core.ViewModels
 {
 	public class FirstViewModel
 		: MvxViewModel

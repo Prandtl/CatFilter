@@ -1,6 +1,6 @@
 using MvvmCross.Platform.IoC;
 
-namespace CatFilter
+namespace CatFilter.Core
 {
     public class App : MvvmCross.Core.ViewModels.MvxApplication
     {
