@@ -11,9 +11,12 @@ namespace CatFilter.Core.ViewModels
 		{
 			_dataService = dataService;
 			_kittenGenesisService = kittenGenesisService;
+			_filter = "";
+			RefreshKittenList();
+			RefreshCounter();
 		}
 
-		private string _filter = "";
+		private string _filter;
 
 		public string Filter
 		{
@@ -41,6 +44,11 @@ namespace CatFilter.Core.ViewModels
 		}
 
 		private void DoApplyFilter()
+		{
+			RefreshKittenList();
+		}
+
+		private void RefreshKittenList()
 		{
 			var filtratedCats = _dataService.KittensMatching(Filter);
 			Kittens = filtratedCats;

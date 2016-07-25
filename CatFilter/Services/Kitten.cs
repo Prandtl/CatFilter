@@ -1,4 +1,5 @@
-﻿using SQLite.Net.Attributes;
+﻿using System;
+using SQLite.Net.Attributes;
 
 namespace CatFilter.Core.Services
 {
@@ -9,5 +10,10 @@ namespace CatFilter.Core.Services
 		public string Name { get; set; }
 		public int Price { get; set; }
 		public string ImgUrl { get; set; }
+
+		public override string ToString()
+		{
+			return $"{Name} ({Price})";
+		}
 	}
 }

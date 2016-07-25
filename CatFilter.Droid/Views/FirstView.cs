@@ -4,7 +4,7 @@ using MvvmCross.Droid.Views;
 
 namespace CatFilter.Droid.Views
 {
-    [Activity(Label = "View for FirstViewModel")]
+    [Activity(Label = "Cat Filter")]
     public class FirstView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)

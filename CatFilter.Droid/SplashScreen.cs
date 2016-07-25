@@ -5,7 +5,7 @@ using MvvmCross.Droid.Views;
 namespace CatFilter.Droid
 {
     [Activity(
-        Label = "CatFilter"
+        Label = "Cat Filter"
         , MainLauncher = true
         , Icon = "@drawable/icon"
         , Theme = "@style/Theme.Splash"
